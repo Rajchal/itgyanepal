@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import localFont from "next/font/local";
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +15,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "IT GyaNepal",
-  description: "BIM,BCA,CSIT,BIT Notes and Solutions with Questions Banks",
+  description: "BIM,BCA,CSIT,BIT Notes and Solutions with Questions Banks. ",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
