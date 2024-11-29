@@ -2,95 +2,144 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: ["class"],
-
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-
   theme: {
     extend: {
+      transitionProperty: {
+        borderColor: "border-color",
+      },
+
+      spacing: {
+        "1/5": "20%",
+        "2/5": "40%",
+        "3/5": "60%",
+        "4/5": "80%",
+        "3/20": "15%",
+        "7/20": "35%",
+        "9/20": "45%",
+        "11/20": "55%",
+        "13/20": "65%",
+        "15/20": "75%",
+        "17/20": "85%",
+        "19/20": "95%",
+        22: "88px",
+        100: "100px",
+        512: "512px",
+        330: "330px",
+        388: "388px",
+        400: "400px",
+        440: "440px",
+        640: "640px",
+        960: "960px",
+        1230: "1230px",
+      },
+
+      zIndex: {
+        1: "1",
+        2: "2",
+        4: "4",
+      },
+      lineHeight: {
+        12: "48px",
+      },
       colors: {
+        p1: "#2EF2FF",
+        p2: "#3C52D9",
+        p3: "#C8EA80",
+        p4: "#EAEDFF",
+        p5: "#C4CBF5",
+        s1: "#080D27",
+        s2: "#0C1838",
+        s3: "#334679",
+        s4: "#1959AD",
+        s5: "#263466",
+        black: {
+          DEFAULT: "#000000",
+          100: "#05091D",
+        },
         primary: {
           "100": "#FFF1E6",
-
           "500": "#FF7000",
         },
-
         dark: {
           "100": "#000000",
-
           "200": "#0F1117",
-
           "300": "#151821",
-
           "400": "#212734",
-
           "500": "#101012",
         },
-
         light: {
           "400": "#858EAD",
-
           "500": "#7B8EC8",
-
           "700": "#DCE3F1",
-
           "800": "#F4F6F8",
-
           "850": "#FDFDFD",
-
           "900": "#FFFFFF",
         },
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar-background))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
+        },
       },
-
       boxShadow: {
+        100: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD",
+        200: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 4px 10px #3391FF",
+        300: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD",
+        400: "inset 0px 2px 4px 0 rgba(255, 255, 255, 0.05)",
+        500: "0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgba(40, 51, 111, 0.7)",
         "light-100":
           "0px 12px 20px 0px rgba(184, 184, 184, 0.03), 0px 6px 12px 0px rgba(184, 184, 184, 0.02), 0px 2px 4px 0px rgba(184, 184, 184, 0.03)",
-
         "light-200": "10px 10px 20px 0px rgba(218, 213, 213, 0.10)",
-
         "light-300": "-10px 10px 20px 0px rgba(218, 213, 213, 0.10)",
-
         "dark-100": "0px 2px 10px 0px rgba(46, 52, 56, 0.10)",
-
         "dark-200": "2px 0px 20px 0px rgba(39, 36, 36, 0.04)",
       },
-
       screens: {
         xs: "420px",
       },
-
       fontFamily: {
+        Inter: ["Inter", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
         inter: ["var(--font-inter)"],
-
         "space-grotesk": ["var(--font-space-grotesk)"],
       },
-
       borderRadius: {
+        14: "14px",
+        20: "20px",
+        40: "40px",
+        half: "50%",
+        "7xl": "40px",
         "2": "8px",
-
         "1.5": "6px",
-
         lg: "var(--radius)",
-
         md: "calc(var(--radius) - 2px)",
-
         sm: "calc(var(--radius) - 4px)",
       },
-
       backgroundImage: {
         "auth-dark": 'url("/images/auth-dark.png")',
-
         "auth-light": 'url("/images/auth-light.png")',
+      },
+      flex: {
+        50: "0 0 50%",
+        320: "1px 0 320px",
+        300: "0 0 300px",
+        540: "0 0 540px",
+        280: "0 0 280px",
+        256: "0 0 256px",
+        100: "0 0 100%",
       },
     },
   },
-
   plugins: [],
 };
-
 export default config;
