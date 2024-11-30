@@ -13,7 +13,7 @@ export const features = [
   {
     id: "1",
     icon: "/images/feature-2.png",
-    caption: "Get Answers To All Your Questions",
+    caption: "All Answers",
     title: "Get answers to all your questions",
     text: "The Answers written by out top students and teachers are all available to you. Rest assured, you're in good hands.",
     button: {
@@ -368,7 +368,7 @@ export const socials = [
     id: "0",
     title: "YouTube",
     icon: "/images/socials/youtube.svg",
-    url: "#",
+    url: "https://www.youtube.com/@ITGyaNepal",
   },
   {
     id: "1",
