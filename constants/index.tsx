@@ -366,21 +366,21 @@ export const links = [
 export const socials = [
   {
     id: "0",
-    title: "x",
-    icon: "/images/socials/x.svg",
+    title: "YouTube",
+    icon: "/images/socials/youtube.svg",
     url: "#",
   },
   {
     id: "1",
-    title: "Threads",
-    icon: "/images/socials/threads.svg",
+    title: "Facebook",
+    icon: "/images/socials/facebook.svg",
     url: "#",
   },
   {
     id: "2",
     title: "Instagram",
     icon: "/images/socials/instagram.svg",
-    url: "#",
+    url: "https://www.instagram.com/itgyanepal/",
   },
   {
     id: "3",

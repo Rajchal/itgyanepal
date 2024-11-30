@@ -1,5 +1,4 @@
-"use client";
-
+import Image from "next/image";
 import { socials } from "../../../constants/index";
 
 const Footer = () => {
@@ -23,10 +22,12 @@ const Footer = () => {
             {socials.map(({ id, url, icon, title }) => (
               <li key={id}>
                 <a href={url} className="social-icon">
-                  <img
+                  <Image
                     src={icon}
                     alt={title}
-                    className="size-1/3 object-contain"
+                    width={25}
+                    height={25}
+                    className=" object-contain"
                   />
                 </a>
               </li>
