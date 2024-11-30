@@ -1,6 +1,6 @@
 "use client";
 
-import { socials } from "../constants/index";
+import { socials } from "../../../constants/index";
 
 const Footer = () => {
   return (

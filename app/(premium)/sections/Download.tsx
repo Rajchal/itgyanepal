@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { Element } from "react-scroll";
 
-import { Marker } from "../components/Marker";
-import { links } from "../constants/index";
+import { Marker } from "../../../components/Marker";
+import { links } from "../../../constants/index";
 
 const Download = () => {
   return (
@@ -69,7 +69,7 @@ const Download = () => {
                   <span className="download_preview-dot left-16 bg-p1/15" />
 
                   <img
-                    src="/images/screen.jpg"
+                    src="/images/screen.png"
                     width={855}
                     height={655}
                     alt="screen"

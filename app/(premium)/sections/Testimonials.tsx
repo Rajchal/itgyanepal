@@ -1,7 +1,7 @@
 "use client";
 
-import { testimonials } from "../constants/index";
-import TestimonialItem from "../components/TestimonialItem";
+import { testimonials } from "../../../constants/index";
+import TestimonialItem from "../../../components/TestimonialItem";
 
 const Testimonials = () => {
   const halfLength = Math.floor(testimonials.length / 2);
